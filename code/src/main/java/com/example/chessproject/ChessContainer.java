@@ -3,7 +3,7 @@ package com.example.chessproject;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class ChessContainer {
     @FXML
     private Label welcomeText;
 
