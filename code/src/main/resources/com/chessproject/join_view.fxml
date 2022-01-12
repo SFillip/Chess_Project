@@ -17,6 +17,6 @@
       <Label layoutX="27.0" layoutY="113.0" text="IP-Adresse des Gegners:" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="189.0" />
       <TextField fx:id="ipTextfield" layoutX="158.0" layoutY="109.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="38.0" />
       <TextField fx:id="playerName" layoutX="158.0" layoutY="150.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="38.0" />
-      <Label layoutX="141.0" layoutY="194.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="175.0" />
+      <Label fx:id="hiddenLabel" layoutX="141.0" layoutY="194.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="175.0" />
    </children>
 </AnchorPane>
