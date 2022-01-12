@@ -1,8 +1,8 @@
-module com.example.chessproject {
+module com.chessproject {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.chessproject to javafx.fxml;
-    exports com.example.chessproject;
+    opens com.chessproject to javafx.fxml;
+    exports com.chessproject;
 }
