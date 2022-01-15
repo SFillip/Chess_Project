@@ -1,5 +1,6 @@
 package com.chessproject;
 
+import com.chessproject.networking.ServerManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
