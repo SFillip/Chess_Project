@@ -34,8 +34,6 @@ public class ServerManager implements Runnable {
             e.printStackTrace();
         }
         clientConnectListener.onConnect();
-
-
     }
 
     private void startHosting(){
