@@ -17,22 +17,33 @@ public class NetworkConversationManager {
         this.out = out;
     }
 
+
+
     /**
      * Starts Checking for incoming commands over the Network
      * When Input comes it will automatically be Process
      */
-    public void CheckForConversations(){
+    public void checkForConversations(){
         try {
             while (true) {
                 String input = in.readLine();
-                ProcessInput(input);
+                processInput(input);
             }
         }catch (IOException e){
             e.printStackTrace();
         }
     }
 
-    private void ProcessInput(String input){
+
+    /**
+     * Sends message to the other participant
+     * @param toWrite String that should be sent
+     */
+    public void Write(String toWrite){
+        out.write(toWrite);
+    }
+
+    private void processInput(String input){
 
     }
 }
