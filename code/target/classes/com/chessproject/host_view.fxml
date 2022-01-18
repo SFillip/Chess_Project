@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chessproject.HostContainer">
    <children>
-      <Button fx:id="backToMenue" layoutX="24.0" layoutY="239.0" mnemonicParsing="false" text="Zurück" />
+      <Button fx:id="backToMenue" layoutX="24.0" layoutY="239.0" mnemonicParsing="false" onAction="#backToMenue" text="Zurück" />
       <Label layoutX="24.0" layoutY="28.0" text="Spiel erstellen" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0">
          <font>
             <Font size="21.0" />
