@@ -7,11 +7,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class ChessApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root=FXMLLoader.load(getClass().getResource("menu_view.fxml"));
+        Parent root=FXMLLoader.load(Objects.requireNonNull(getClass().getResource("menu_view.fxml")));
 
         stage.setTitle("Chess Online");
         stage.setScene(new Scene(root));
