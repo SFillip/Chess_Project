@@ -2,8 +2,14 @@ package com.chessproject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MenuContainer {
 
@@ -18,13 +24,25 @@ public class MenuContainer {
 
 
     @FXML
-    public void showHostGame(ActionEvent actionEvent){
+    public void showHostGame(ActionEvent actionEvent) throws IOException {
+        Parent parent=new FXMLLoader(getClass().getResource("host_view.fxml")).load();
+        Scene scene=new Scene(parent);
+        Stage stage=new Stage();
 
+        stage.setScene(scene);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait();
     }
 
     @FXML
-    public void showJoinLobby(ActionEvent actionEvent){
+    public void showJoinLobby(ActionEvent actionEvent) throws IOException {
+        Parent parent=new FXMLLoader(getClass().getResource("join_view.fxml")).load();
+        Scene scene=new Scene(parent);
+        Stage stage=new Stage();
 
+        stage.setScene(scene);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait();
     }
 
     @FXML
