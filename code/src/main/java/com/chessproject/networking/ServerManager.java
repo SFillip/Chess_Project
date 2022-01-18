@@ -1,7 +1,7 @@
 package com.chessproject.networking;
 
-import com.chessproject.networking.events.ConnectionListener;
 import com.chessproject.networking.events.HostListener;
+import com.chessproject.networking.events.ConnectionListener;
 
 import java.io.IOException;
 import java.net.ServerSocket;
