@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chessproject.ChessContainer">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chessproject.MenuContainer">
    <children>
       <ImageView fitHeight="300.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="join_button" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#showJoinLobby" text="Spiel joinen" />
