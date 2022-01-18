@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chessproject.JoinContainer">
+   <children>
+      <Button fx:id="backToMenue" layoutX="24.0" layoutY="239.0" mnemonicParsing="false" text="Zurück" />
+      <Label layoutX="24.0" layoutY="28.0" text="Spiel beitreten" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="joinTheGame" layoutX="214.0" layoutY="239.0" mnemonicParsing="false" text="Spiel beitreten" />
+      <Label layoutX="27.0" layoutY="154.0" text="Spielername:" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="189.0" />
+      <Label layoutX="27.0" layoutY="113.0" text="IP-Adresse des Gegners:" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="189.0" />
+      <TextField fx:id="ipTextfield" layoutX="158.0" layoutY="109.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="38.0" />
+      <TextField fx:id="playerName" layoutX="158.0" layoutY="150.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="38.0" />
+      <Label fx:id="hiddenLabel" layoutX="141.0" layoutY="194.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="175.0" />
+   </children>
+</AnchorPane>
