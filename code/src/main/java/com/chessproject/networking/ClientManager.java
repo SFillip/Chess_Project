@@ -17,6 +17,11 @@ public class ClientManager implements Runnable {
     @Override
     public void run() {
         establishConnection();
+        try {
+            new NetworkConversationManager(client.getInputStream(),client.getOutputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void establishConnection(){

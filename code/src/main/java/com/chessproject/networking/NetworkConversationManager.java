@@ -1,9 +1,11 @@
 package com.chessproject.networking;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
+
+/**
+ * Class that Handles Conversation of the Network
+ */
 public class NetworkConversationManager {
     private BufferedReader in;
     private PrintWriter out;
@@ -12,9 +14,9 @@ public class NetworkConversationManager {
      * @param in InputStream of Server/Client
      * @param out OutputStream of Server/Client
      */
-    public NetworkConversationManager(BufferedReader in, PrintWriter out) {
-        this.in = in;
-        this.out = out;
+    public NetworkConversationManager(InputStream in, OutputStream out) {
+        this.in = new BufferedReader(new InputStreamReader(in));
+        this.out =new PrintWriter(new OutputStreamWriter(out));
     }
 
 

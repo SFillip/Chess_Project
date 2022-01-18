@@ -34,6 +34,12 @@ public class ServerManager implements Runnable {
             e.printStackTrace();
         }
         clientConnectListener.onConnect();
+
+        try {
+            new NetworkConversationManager(client.getInputStream(),client.getOutputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void startHosting(){
