@@ -28,7 +28,7 @@ public class JoinContainer {
         stage.close();
     }
 
-    @FXML
+    @Deprecated
     public void initialize(){
 
 
@@ -63,5 +63,13 @@ public class JoinContainer {
         });
 
 
+    }
+
+    @FXML
+    public void ipTextField(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void playernameTextfield(ActionEvent actionEvent) {
     }
 }
