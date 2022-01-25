@@ -28,16 +28,6 @@ public class JoinContainer {
         stage.close();
     }
 
-    @javafx.fxml.FXML
-    public void ipTextField(ActionEvent actionEvent) {
-
-    }
-
-    @javafx.fxml.FXML
-    public void playernameTextfield(ActionEvent actionEvent) {
-
-    }
-
     @FXML
     public void initialize(){
 
@@ -56,6 +46,12 @@ public class JoinContainer {
         playerName.textProperty().addListener((observable, oldValue, newValue) -> {
             if(newValue == "" || newValue == null){
                 joinGameButton.setDisable(true);
+
+
+
+
+
+
                 nameFieldFilled = false;
             }else{
 
