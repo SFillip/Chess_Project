@@ -72,4 +72,12 @@ public class JoinContainer {
     @FXML
     public void playernameTextfield(ActionEvent actionEvent) {
     }
+
+    @FXML
+    public void joinGame(ActionEvent actionEvent) {
+
+
+
+
+    }
 }

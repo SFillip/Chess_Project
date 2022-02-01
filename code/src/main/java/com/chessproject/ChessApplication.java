@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class ChessApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws Exception {
         Parent root=FXMLLoader.load(Objects.requireNonNull(getClass().getResource("menu_view.fxml")));
 
         stage.setTitle("Chess Online");
