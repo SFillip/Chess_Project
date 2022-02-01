@@ -8,7 +8,7 @@ import java.util.List;
 public abstract class Figure {
 
 
-    /**Position on X Axis of the Figure/*public int pos_x;
+    /**Position on X Axis of the Figure*/public int pos_x;
     /**Position on Y Axis of the Figure*/public int pos_y;
 
     /**Marks Player in Control
