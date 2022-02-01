@@ -12,7 +12,7 @@
             <Font size="21.0" />
          </font>
       </Label>
-      <Button fx:id="hostGame" layoutX="214.0" layoutY="239.0" mnemonicParsing="false" text="Spiel erstellen" />
+      <Button fx:id="hostGame" disable="true" layoutX="214.0" layoutY="239.0" mnemonicParsing="false" onAction="#createLobby" text="Spiel erstellen" />
       <Label layoutX="32.0" layoutY="140.0" prefHeight="18.0" prefWidth="90.0" text="Spielername:" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="222.0" />
       <TextField fx:id="playerName" layoutX="130.0" layoutY="136.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="66.0" />
       <Label fx:id="hiddenLabel" layoutX="141.0" layoutY="194.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="175.0" />
