@@ -3,7 +3,9 @@ package com.chessproject.gameplay;
 import com.chessproject.networking.NetworkConversationManager;
 
 public class GamePlayManager {
+    public static Player localPlayer;
     public static int playerInControl = 0;
+
     boolean endOfGame = false;
 
     public static NetworkConversationManager conversationManager;
