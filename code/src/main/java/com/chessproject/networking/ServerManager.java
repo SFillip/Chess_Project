@@ -30,19 +30,20 @@ public class ServerManager implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         clientConnectListener.onConnect();
 
         try {
-            new NetworkConversationManager(client.getInputStream(),client.getOutputStream());
+            new NetworkConversationManager(client.getInputStream(),client.getOutputStream()).checkForConversations();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     private void startHosting(){
         try {
             host=new ServerSocket(69);
-            System.out.println(InetAddress.getLocalHost());
         } catch (IOException e) {
             e.printStackTrace();
         }

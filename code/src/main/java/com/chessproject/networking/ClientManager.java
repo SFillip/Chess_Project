@@ -18,7 +18,7 @@ public class ClientManager implements Runnable {
     public void run() {
         establishConnection();
         try {
-            new NetworkConversationManager(client.getInputStream(),client.getOutputStream());
+            new NetworkConversationManager(client.getInputStream(),client.getOutputStream()).checkForConversations();
         } catch (IOException e) {
             e.printStackTrace();
         }

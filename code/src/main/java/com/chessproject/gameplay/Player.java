@@ -5,6 +5,11 @@ public class Player {
     private String playerName;
     private int playerNumber;
 
+    public Player(String playerName, int playerNumber) {
+        this.playerName = playerName;
+        this.playerNumber = playerNumber;
+    }
+
     public String getPlayerName() {
         return playerName;
     }

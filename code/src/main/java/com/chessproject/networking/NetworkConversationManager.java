@@ -1,5 +1,6 @@
 package com.chessproject.networking;
 
+import com.chessproject.LobbyContainer;
 import com.chessproject.gameplay.GamePlayManager;
 
 import java.io.*;
@@ -10,7 +11,7 @@ import java.io.*;
  */
 public class NetworkConversationManager {
     private final BufferedReader in;
-    private final PrintWriter out;
+    private static PrintWriter out;
 
     /**
      * @param in  InputStream of Server/Client
@@ -18,7 +19,7 @@ public class NetworkConversationManager {
      */
     public NetworkConversationManager(InputStream in, OutputStream out) {
         this.in = new BufferedReader(new InputStreamReader(in));
-        this.out = new PrintWriter(new OutputStreamWriter(out));
+        NetworkConversationManager.out = new PrintWriter(new OutputStreamWriter(out));
     }
 
 
@@ -43,16 +44,35 @@ public class NetworkConversationManager {
      *
      * @param toWrite String that should be sent
      */
-    public void write(String toWrite) {
-        out.write(toWrite);
+    public synchronized static void write(String toWrite) {
+        System.out.println(toWrite);
+        out.println(toWrite);
+        out.flush();
     }
 
     private void processInput(String input) {
 
         if (input.startsWith("gameplay::")) {
             if (input.substring(11).equals("playerChange::")) {
-                GamePlayManager.playerInControl=Integer.parseInt(input.substring(27));
+                GamePlayManager.playerInControl = Integer.parseInt(input.substring(27));
             }
+        } else if (input.startsWith("request::")) {
+            if (input.substring(9, 13).equals("name")) {
+                System.out.println("requ");
+
+                NetworkConversationManager.write("answer::playerNameRequest::" + GamePlayManager.localPlayer.getPlayerName());
+
+                if (input.substring(13).equals("::originalCall")) {
+                    NetworkConversationManager.write("request::name");
+                }
+            }
+        } else if (input.startsWith("answer::")) {
+            if (input.substring(8, 27).equals("playerNameRequest::")) {
+
+                LobbyContainer.remoteName = input.substring(27);
+            }
+        } else {
+            System.out.println("error " + input + " not defined");
         }
     }
 }
