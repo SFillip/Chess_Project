@@ -25,5 +25,5 @@ public abstract class Figure {
     }
 
     /**@return Returns a list populated with the fields that can be moved to*/
-    public abstract List<Integer[][]> determinMoveables();
+    public abstract boolean[][] determinMoveables();
 }
