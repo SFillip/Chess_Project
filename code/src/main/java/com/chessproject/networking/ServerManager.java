@@ -41,7 +41,7 @@ public class ServerManager implements Runnable {
 
     private void startHosting(){
         try {
-            host=new ServerSocket(69,0, InetAddress.getLocalHost());
+            host=new ServerSocket(69);
             System.out.println(InetAddress.getLocalHost());
         } catch (IOException e) {
             e.printStackTrace();

@@ -26,7 +26,7 @@ public class ClientManager implements Runnable {
 
     private void establishConnection(){
         try {
-            client=new Socket(address,69);
+            client=new Socket("localhost",69);
         } catch (UnknownHostException e) {
             System.out.println(address);
         } catch (IOException e) {
