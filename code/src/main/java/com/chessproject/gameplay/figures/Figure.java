@@ -7,9 +7,10 @@ import java.util.List;
  */
 public abstract class Figure {
 
-
-    /**Position on X Axis of the Figure*/public int pos_x;
-    /**Position on Y Axis of the Figure*/public int pos_y;
+    /**Position on X Axis of the Figure*/
+    public int pos_x;
+    /**Position on Y Axis of the Figure*/
+    public int pos_y;
 
     /**Marks Player in Control
      * 0= Host
@@ -23,6 +24,6 @@ public abstract class Figure {
         pos_y=y;
     }
 
-    /**@return Returns a list populated with the field that can be moved to*/
+    /**@return Returns a list populated with the fields that can be moved to*/
     public abstract List<Integer[][]> determinMoveables();
 }
