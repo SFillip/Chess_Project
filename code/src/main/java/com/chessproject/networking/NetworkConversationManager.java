@@ -1,5 +1,7 @@
 package com.chessproject.networking;
 
+import com.chessproject.gameplay.GamePlayManager;
+
 import java.io.*;
 
 
@@ -11,27 +13,26 @@ public class NetworkConversationManager {
     private PrintWriter out;
 
     /**
-     * @param in InputStream of Server/Client
+     * @param in  InputStream of Server/Client
      * @param out OutputStream of Server/Client
      */
     public NetworkConversationManager(InputStream in, OutputStream out) {
         this.in = new BufferedReader(new InputStreamReader(in));
-        this.out =new PrintWriter(new OutputStreamWriter(out));
+        this.out = new PrintWriter(new OutputStreamWriter(out));
     }
-
 
 
     /**
      * Starts Checking for incoming commands over the Network
      * When Input comes it will automatically be Process
      */
-    public void checkForConversations(){
+    public void checkForConversations() {
         try {
             while (true) {
                 String input = in.readLine();
                 processInput(input);
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -39,13 +40,19 @@ public class NetworkConversationManager {
 
     /**
      * Sends message to the other participant
+     *
      * @param toWrite String that should be sent
      */
-    public void Write(String toWrite){
+    public void write(String toWrite) {
         out.write(toWrite);
     }
 
-    private void processInput(String input){
+    private void processInput(String input) {
 
+        if (input.startsWith("gameplay::")) {
+            if (input.substring(11).equals("playerChange::")) {
+                GamePlayManager.playerInControl=Integer.parseInt(input.substring(27));
+            }
+        }
     }
 }

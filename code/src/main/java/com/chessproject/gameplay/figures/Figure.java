@@ -2,8 +2,19 @@ package com.chessproject.gameplay.figures;
 
 import java.util.List;
 
+/**
+ *Abstract class that is to be inherited by any other Figures
+ */
 public abstract class Figure {
-    public int pos_x, pos_y;
+
+
+    /**Position on X Axis of the Figure*/public int pos_x;
+    /**Position on Y Axis of the Figure*/public int pos_y;
+
+    /**Marks Player in Control
+     * 0= Host
+     * 1= Client
+     */
     public int playerInControl;
 
     /**Moves Figure Position*/
