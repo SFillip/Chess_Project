@@ -49,8 +49,8 @@ public class LobbyContainer {
             {
                 playerNameInLobby.setText(sc.nextLine());
 
-                Thread fred = new Thread(new ServerManager());
-
+                //Thread fred = new Thread(new ServerManager());
+                /** Geht nu ned **/
 
             }else if(sc.nextLine().equals("2")){
                 playerNameInLobby.setText(sc.nextLine());
