@@ -2,10 +2,19 @@ package com.chessproject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class JoinContainer {
     @javafx.fxml.FXML
@@ -74,7 +83,23 @@ public class JoinContainer {
     }
 
     @FXML
-    public void joinGame(ActionEvent actionEvent) {
+    public void joinGame(ActionEvent actionEvent) throws IOException {
+
+        String playerNam = playerName.getText();
+        String ipAddress = ipTextfield.getText();
+        try(PrintWriter w = new PrintWriter(new File("getNamesAndIP.txt"))){
+            w.write(playerNam);
+            w.write(ipAddress);
+        }catch(FileNotFoundException e){
+            System.out.println("File not found.");
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        Stage stage = (Stage) backToMenue.getScene().getWindow();
+        stage.close();
+
+
+
 
 
 

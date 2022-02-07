@@ -10,7 +10,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class HostContainer {
     @javafx.fxml.FXML
@@ -47,17 +51,21 @@ public class HostContainer {
 
     @javafx.fxml.FXML
     public void createLobby(ActionEvent actionEvent) throws IOException {
-        Parent parent=new FXMLLoader(getClass().getResource("lobby_view.fxml")).load();
-        Scene scene=new Scene(parent);
-        Stage stage=new Stage();
-
-        playerName.getText();
 
 
+        String playerNam = playerName.getText();
+        try(PrintWriter w = new PrintWriter(new File("getNamesAndIP.txt"))){
+        w.write(playerNam);
+        }catch(FileNotFoundException e){
+            System.out.println("File not found.");
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        Stage stage = (Stage) backToMenue.getScene().getWindow();
+        stage.close();
 
-        stage.setScene(scene);
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.showAndWait();
+
+
 
 
     }
