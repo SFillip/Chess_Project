@@ -2,23 +2,20 @@ package com.chessproject.gameplay;
 
 import com.chessproject.networking.NetworkConversationManager;
 
+
 public class GamePlayManager {
     public static Player localPlayer;
     public static int playerInControl = 0;
 
-    boolean endOfGame = false;
-
     public static NetworkConversationManager conversationManager;
+
+    public boolean endOfGame = false;
+    public boolean charSelected;
 
     public void gameLoop() {
         while (!endOfGame) {
-            if(playerInControl==0) {
-                //Player selects Character
-                //get all Fields that can be moved to
-                //Move character
-                //Send New Field to Client
-            }
-            //Check if won else change payer
+            while(!charSelected) {}
+
         }
         //Disconnect the Players
     }

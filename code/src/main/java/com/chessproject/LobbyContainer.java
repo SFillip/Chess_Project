@@ -1,70 +1,69 @@
 package com.chessproject;
 
 import com.chessproject.networking.ServerManager;
+import com.chessproject.networking.ClientManager;
+import com.chessproject.networking.events.ConnectionListener;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class LobbyContainer {
-    @javafx.fxml.FXML
-    private Button backToMenue;
-    @javafx.fxml.FXML
+
+    @FXML
+    private Button backToMenu;
+    @FXML
     private Button hostGame;
-    @javafx.fxml.FXML
+    @FXML
     private Label hiddenLabel;
-    @javafx.fxml.FXML
+    @FXML
     private Label enemyNameInLobby;
-    @javafx.fxml.FXML
+    @FXML
     private Label playerNameInLobby;
 
-
-
-    @javafx.fxml.FXML
-    public void close(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) backToMenue.getScene().getWindow();
-        stage.close();
-
-        stage = (Stage) backToMenue.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("menu_view.fxml"));
-        stage.getScene().setRoot(root);
+    @FXML
+    public void close(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void startGame(ActionEvent actionEvent) {
     }
 
-    @Deprecated
-    public void initialize(){
-        try {
-            Scanner sc = new Scanner(new File("getNamesAndIP.txt"));
-            if(sc.nextLine().equals("1"))
-            {
-                playerNameInLobby.setText(sc.nextLine());
+    @FXML
+    public void initialize() {
+        String ip;
+        String name;
+        try (Scanner s = new Scanner(new File("getNamesAndIP.txt"))) {
+            String line = s.nextLine();
+            if (line.startsWith("1")) {
+                name=s.nextLine();
 
-                //Thread fred = new Thread(new ServerManager());
-                /** Geht nu ned **/
+                System.out.println(name);
 
-            }else if(sc.nextLine().equals("2")){
-                playerNameInLobby.setText(sc.nextLine());
+                Thread f=new Thread(new ServerManager(this::OnClientConnetetd));
+                f.start();
 
-            }else{
-                System.out.println("Es ist ein Fehler aufgetreten");
+                playerNameInLobby.setText(name);
+            } else {
+                name=s.nextLine();
+                ip=s.nextLine();
+
+                System.out.println(ip);
+
+                Thread f=new Thread(new ClientManager(("ip")));
+                f.start();
+
             }
-
         } catch (FileNotFoundException e) {
-            System.out.println("File not found.");
-        } catch (NullPointerException e) {
             e.printStackTrace();
         }
+    }
 
-
+    public void OnClientConnetetd(){
+        System.out.println("Connection established");
     }
 }

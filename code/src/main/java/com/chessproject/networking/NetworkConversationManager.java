@@ -9,8 +9,8 @@ import java.io.*;
  * Class that Handles Conversation of the Network
  */
 public class NetworkConversationManager {
-    private BufferedReader in;
-    private PrintWriter out;
+    private final BufferedReader in;
+    private final PrintWriter out;
 
     /**
      * @param in  InputStream of Server/Client

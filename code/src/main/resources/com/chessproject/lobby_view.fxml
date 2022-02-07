@@ -4,18 +4,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chessproject.LobbyContainer">
-   <children>
-      <Button fx:id="backToMenue" layoutX="24.0" layoutY="239.0" mnemonicParsing="false" onAction="#close" text="Zurück" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="50.0" />
-      <Label layoutX="24.0" layoutY="28.0" text="Spiel erstellen" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </Label>
-      <Button fx:id="hostGame" disable="true" layoutX="214.0" layoutY="239.0" mnemonicParsing="false" onAction="#startGame" text="Spiel starten" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="50.0" />
-      <Label fx:id="hiddenLabel" layoutX="141.0" layoutY="194.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="175.0" />
-      <Label fx:id="playerNameInLobby" alignment="CENTER" layoutX="76.0" layoutY="87.0" prefHeight="18.0" prefWidth="157.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
-      <Label alignment="CENTER" layoutX="140.0" layoutY="129.0" text="gegen" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
-      <Label fx:id="enemyNameInLobby" alignment="CENTER" layoutX="62.0" layoutY="175.0" prefHeight="18.0" prefWidth="158.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0"
+            prefWidth="344.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.chessproject.LobbyContainer">
+   <Button fx:id="backToMenu" layoutX="24.0" layoutY="239.0" mnemonicParsing="false" onAction="#close" text="Zurück"
+           AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="50.0"/>
+   <Label layoutX="24.0" layoutY="28.0" text="Spiel erstellen" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0">
+      <font>
+         <Font size="21.0"/>
+      </font>
+   </Label>
+   <Button fx:id="hostGame" disable="true" layoutX="214.0" layoutY="239.0" mnemonicParsing="false" onAction="#startGame"
+           text="Spiel starten" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="50.0"/>
+   <Label fx:id="hiddenLabel" layoutX="141.0" layoutY="194.0" AnchorPane.leftAnchor="141.0"
+          AnchorPane.rightAnchor="175.0"/>
+   <Label fx:id="playerNameInLobby" alignment="CENTER" layoutX="76.0" layoutY="87.0" prefHeight="18.0" prefWidth="157.0"
+          AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0"/>
+   <Label alignment="CENTER" layoutX="140.0" layoutY="129.0" text="gegen" AnchorPane.leftAnchor="150.0"
+          AnchorPane.rightAnchor="150.0"/>
+   <Label fx:id="enemyNameInLobby" alignment="CENTER" layoutX="62.0" layoutY="175.0" prefHeight="18.0" prefWidth="158.0"
+          AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0"/>
 </AnchorPane>

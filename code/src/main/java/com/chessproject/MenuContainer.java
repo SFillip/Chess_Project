@@ -10,6 +10,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class MenuContainer {
 
@@ -34,7 +35,7 @@ public class MenuContainer {
         stage.showAndWait();
 
         stage = (Stage) host_button.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("lobby_view.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("lobby_view.fxml")));
         stage.getScene().setRoot(root);
     }
 
@@ -49,7 +50,7 @@ public class MenuContainer {
         stage.showAndWait();
 
         stage = (Stage) host_button.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("lobby_view.fxml"));
+        Parent root =new FXMLLoader(getClass().getResource("lobby_view.fxml")).load();
         stage.getScene().setRoot(root);
     }
 

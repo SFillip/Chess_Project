@@ -1,9 +1,9 @@
 package com.chessproject.networking;
 
-import com.chessproject.networking.events.HostListener;
 import com.chessproject.networking.events.ConnectionListener;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -13,14 +13,11 @@ public class ServerManager implements Runnable {
     private ServerSocket host;
     private Socket client;
 
-    private HostListener hostStartListener;
-    private ConnectionListener clientConnectListener;
+    private final ConnectionListener clientConnectListener;
 
     /** Creates a ServerManager with two Events for Connection
-     * @param listener Event that triggers when the Host start
      * @param clientListener Event that triggers when Client connects*/
-    public ServerManager(HostListener listener,ConnectionListener clientListener) {
-        hostStartListener=listener;
+    public ServerManager(ConnectionListener clientListener) {
         clientConnectListener=clientListener;
     }
 
@@ -44,11 +41,11 @@ public class ServerManager implements Runnable {
 
     private void startHosting(){
         try {
-            host=new ServerSocket(69420);
+            host=new ServerSocket(69,0, InetAddress.getLocalHost());
+            System.out.println(InetAddress.getLocalHost());
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        hostStartListener.onHostStarted();
     }
 }
