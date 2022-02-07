@@ -47,6 +47,10 @@ public class MenuContainer {
         stage.setScene(scene);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
+
+        stage = (Stage) host_button.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("lobby_view.fxml"));
+        stage.getScene().setRoot(root);
     }
 
     @FXML

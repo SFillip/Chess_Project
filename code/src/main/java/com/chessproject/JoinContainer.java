@@ -88,8 +88,9 @@ public class JoinContainer {
         String playerNam = playerName.getText();
         String ipAddress = ipTextfield.getText();
         try(PrintWriter w = new PrintWriter(new File("getNamesAndIP.txt"))){
-            w.write(playerNam);
-            w.write(ipAddress);
+            w.println("2");
+            w.println(playerNam);
+            w.print(ipAddress);
         }catch(FileNotFoundException e){
             System.out.println("File not found.");
         }catch(Exception e){

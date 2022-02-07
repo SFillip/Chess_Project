@@ -1,20 +1,15 @@
 package com.chessproject;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Scanner;
 
 public class HostContainer {
     @javafx.fxml.FXML
@@ -55,7 +50,8 @@ public class HostContainer {
 
         String playerNam = playerName.getText();
         try(PrintWriter w = new PrintWriter(new File("getNamesAndIP.txt"))){
-        w.write(playerNam);
+        w.println("1");
+        w.println(playerNam);
         }catch(FileNotFoundException e){
             System.out.println("File not found.");
         }catch(Exception e){
