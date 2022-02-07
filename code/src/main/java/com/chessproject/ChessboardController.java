@@ -12,7 +12,7 @@ public class ChessboardController {
     @FXML
     private GridPane gridPane;
 
-    @FXML
+    @Deprecated
     public void initialize(){
         for(Node child : gridPane.getChildren()){
 

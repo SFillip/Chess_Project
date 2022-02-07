@@ -36,24 +36,29 @@ public class LobbyContainer {
     private Label playerNameInLobby;
 
     private Alert clientJoinedAlert;
-    private boolean clientConnected;
 
     @FXML
-    public void close(ActionEvent actionEvent) {
+    public void close(ActionEvent actionEvent)throws IOException {
         Stage stage = (Stage) backToMenu.getScene().getWindow();
-        Parent root = null;
-
-        try {
-            root = new FXMLLoader(getClass().getResource("menu_view.fxml")).load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Parent root =new FXMLLoader(getClass().getResource("menu_view.fxml")).load();
 
         stage.getScene().setRoot(root);
     }
 
     @FXML
     public void startGame(ActionEvent actionEvent) {
+        NetworkConversationManager.write("swapToChessboard");
+
+        Stage stage = (Stage) hostGame.getScene().getWindow();
+        Parent root = null;
+
+        try {
+            root = new FXMLLoader(getClass().getResource("Chessboard_view.fxml")).load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        stage.getScene().setRoot(root);
     }
 
     @FXML
@@ -96,7 +101,6 @@ public class LobbyContainer {
 
     public void onClientConnected(){
         clientJoinedAlert.showAndWait();
-        clientConnected=true;
 
         NetworkConversationManager.write("request::name");
 
