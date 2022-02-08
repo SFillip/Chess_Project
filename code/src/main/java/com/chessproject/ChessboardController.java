@@ -5,6 +5,7 @@ import com.chessproject.gameplay.board.Board;
 import com.chessproject.gameplay.figures.Figure;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 
 public class ChessboardController {
@@ -175,7 +176,7 @@ public class ChessboardController {
                     if(board.selectFigure(OriginalX,OriginalY,GamePlayManager.localPlayer.getPlayerNumber())!=null){
                         selected=board.selectFigure(OriginalX,OriginalY,GamePlayManager.localPlayer.getPlayerNumber());
 
-                        moveAbles=selected.determinMoveables()
+                        moveAbles=selected.determinMoveables(board.board);
 
                         figureSelected=true;
                     }
@@ -183,7 +184,23 @@ public class ChessboardController {
                     System.out.println("b");
                     figureSelected=false;
 
-                    GamePlayManager.changePlayer();
+                    int newX;
+                    try {
+                        newX= GridPane.getColumnIndex(child);
+                    }catch(NullPointerException e){
+                        newX=0;
+                    }
+
+                    int newY;
+                    try {
+                        newY= GridPane.getRowIndex(child);
+                    }catch(NullPointerException e){
+                        newY=0;
+                    }
+
+                    if(moveAbles[newX][newY]=true){
+                        GamePlayManager.changePlayer();
+                    }
                 }
             });
         }
