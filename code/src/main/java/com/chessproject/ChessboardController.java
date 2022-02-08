@@ -28,8 +28,6 @@ public class ChessboardController {
     @FXML
     private Label DD;
     @FXML
-    private Label DE;
-    @FXML
     private Label DF;
     @FXML
     private Label DG;
@@ -42,15 +40,11 @@ public class ChessboardController {
     @FXML
     private Label ED;
     @FXML
-    private Label EE;
-    @FXML
     private Label AA;
     @FXML
     private Label EF;
     @FXML
     private Label AB;
-    @FXML
-    private Label EG;
     @FXML
     private Label AC;
     @FXML
@@ -80,8 +74,6 @@ public class ChessboardController {
     @FXML
     private Label BD;
     @FXML
-    private Label BE;
-    @FXML
     private Label BF;
     @FXML
     private Label BG;
@@ -110,8 +102,6 @@ public class ChessboardController {
     @FXML
     private Label CD;
     @FXML
-    private Label CE;
-    @FXML
     private Label CF;
     @FXML
     private Label CG;
@@ -137,6 +127,22 @@ public class ChessboardController {
     private Label HG;
     @FXML
     private Label DC;
+    @FXML
+    private Label EA;
+    @FXML
+    private Label EB;
+    @FXML
+    private Label AG;
+    @FXML
+    private Label FA;
+    @FXML
+    private Label FB;
+    @FXML
+    private Label BB;
+    @FXML
+    private Label BC;
+    @FXML
+    private Label GE;
 
     @Deprecated
     public void initialize() {
