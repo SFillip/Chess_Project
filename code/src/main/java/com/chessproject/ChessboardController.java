@@ -184,8 +184,6 @@ public class ChessboardController {
                     }
                 } else if (figureSelected && GamePlayManager.playerInControl == GamePlayManager.localPlayer.getPlayerNumber()) {
                     System.out.println("b");
-                    figureSelected = false;
-
                     int newX;
                     try {
                         newX = GridPane.getColumnIndex(child);
@@ -200,7 +198,10 @@ public class ChessboardController {
                         newY = 0;
                     }
 
+                    System.out.println(newX+" "+newY);
+
                     if (moveAbles[newX][newY] = true) {
+                        System.out.println("moveable");
                         selected.move(newX, newY, board.board);
 
                         board.board[newX][newY].setFigure(selected);
@@ -727,6 +728,7 @@ public class ChessboardController {
                                 }
                         }
 
+                        figureSelected = false;
                         GamePlayManager.changePlayer();
                     }
                 }
