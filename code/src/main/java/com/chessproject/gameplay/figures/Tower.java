@@ -10,6 +10,7 @@ public class Tower extends Figure {
 
     public Tower(int pos_x, int pos_y, int playerInControl) {
         super(pos_x, pos_y, playerInControl);
+        name= "T";
     }
 
     @Override

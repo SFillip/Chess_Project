@@ -61,4 +61,8 @@ public class Board {
         }
         return null;
     }
+
+    public Field[][] getBoard() {
+        return board;
+    }
 }
