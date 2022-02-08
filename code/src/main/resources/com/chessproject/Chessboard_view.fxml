@@ -157,23 +157,38 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="2" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="CF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CF" layoutX="18.0" layoutY="-3.0">
+            <font>
+               <Font size="39.0" />
+            </font></Label>
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="3" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="DF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DF" layoutX="18.0" layoutY="-3.0">
+            <font>
+               <Font size="39.0" />
+            </font></Label>
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="4" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="EF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="EF" layoutX="18.0" layoutY="-3.0">
+            <font>
+               <Font size="39.0" />
+            </font></Label>
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="5" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="FF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FF" layoutX="18.0" layoutY="-3.0">
+            <font>
+               <Font size="39.0" />
+            </font></Label>
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="6" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="GF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GF" layoutX="18.0" layoutY="-3.0">
+            <font>
+               <Font size="39.0" />
+            </font></Label>
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="7" GridPane.rowIndex="2">
       <children>
