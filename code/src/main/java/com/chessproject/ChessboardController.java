@@ -38,10 +38,6 @@ public class ChessboardController {
     @FXML
     private Pane A7;
     @FXML
-    private Label EA;
-    @FXML
-    private Label EB;
-    @FXML
     private Label EC;
     @FXML
     private Label ED;
@@ -66,13 +62,7 @@ public class ChessboardController {
     @FXML
     private Label AF;
     @FXML
-    private Label AG;
-    @FXML
     private Label AH;
-    @FXML
-    private Label FA;
-    @FXML
-    private Label FB;
     @FXML
     private Label FC;
     @FXML
@@ -84,11 +74,7 @@ public class ChessboardController {
     @FXML
     private Label FF;
     @FXML
-    private Label BB;
-    @FXML
     private Label FG;
-    @FXML
-    private Label BC;
     @FXML
     private Label FH;
     @FXML
@@ -109,8 +95,6 @@ public class ChessboardController {
     private Label GC;
     @FXML
     private Label GD;
-    @FXML
-    private Label GE;
     @FXML
     private Label CA;
     @FXML
