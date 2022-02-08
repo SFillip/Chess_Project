@@ -86,7 +86,9 @@ public class LobbyContainer {
                 name=s.nextLine();
                 ip=s.nextLine();
 
-                GamePlayManager.localPlayer=new Player(name,1);
+                GamePlayManager.localPlayer=new Player();
+                GamePlayManager.localPlayer.setPlayerName(name);
+                GamePlayManager.localPlayer.setPlayerNumber(1);
 
                 Thread f=new Thread(new ClientManager(("ip")));
                 Thread f2=new Thread(()->Platform.runLater(this::onConnectedToHost));
