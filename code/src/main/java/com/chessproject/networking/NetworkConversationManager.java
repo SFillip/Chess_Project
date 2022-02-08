@@ -45,7 +45,7 @@ public class NetworkConversationManager {
      *
      * @param toWrite String that should be sent
      */
-    public synchronized static void write(String toWrite) {
+    public static void write(String toWrite) {
         System.out.println(toWrite);
         out.println(toWrite);
         out.flush();
