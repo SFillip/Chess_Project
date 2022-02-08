@@ -18,7 +18,7 @@ public abstract class Figure {
      * 1= Client
      */
     public int playerInControl;
-
+    public String name;
     public Figure(int pos_x,int pos_y,int playerInControl) {
 
     }
@@ -32,4 +32,9 @@ public abstract class Figure {
 
     /**@return Returns a list populated with the fields that can be moved to*/
     public abstract boolean[][] determinMoveables(Field[][] chessboard);
+
+    public String getName() {
+        return name;
+    }
 }
+    
