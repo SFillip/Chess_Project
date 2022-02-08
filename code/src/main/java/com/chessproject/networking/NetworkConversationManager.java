@@ -2,6 +2,7 @@ package com.chessproject.networking;
 
 import com.chessproject.LobbyContainer;
 import com.chessproject.gameplay.GamePlayManager;
+import javafx.application.Platform;
 
 import java.io.*;
 
@@ -71,7 +72,16 @@ public class NetworkConversationManager {
 
                 LobbyContainer.remoteName = input.substring(27);
             }
-        } else {
+        }else if(input.equals("swapToChessboard")){
+            Platform.runLater(()->{
+                try {
+                    LobbyContainer.switchSceneToChessboardOnClient();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            });
+        }
+        else {
             System.out.println("error " + input + " not defined");
         }
     }
