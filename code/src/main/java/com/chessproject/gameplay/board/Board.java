@@ -48,7 +48,8 @@ public class Board {
     }
 
     public void moveFigure(int oldFigureX,int oldFigureY,int newFigureX,int newFigureY){
-        board[oldFigureX][oldFigureY].getFigure().move(newFigureX,newFigureY);
+        board[oldFigureX][oldFigureY].getFigure().move(newFigureX,newFigureY,board);
+
     }
 
     /** Returns Figure on position if the right Player is in control

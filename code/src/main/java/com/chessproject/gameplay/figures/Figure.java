@@ -25,7 +25,7 @@ public abstract class Figure {
 
 
     /**Moves Figure Position*/
-    public void move(int x, int y){
+    public void move(int x, int y, Field[][] chessboard) {
         pos_x=x;
         pos_y=y;
     }
