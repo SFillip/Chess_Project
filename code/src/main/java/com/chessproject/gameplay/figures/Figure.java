@@ -1,12 +1,15 @@
 package com.chessproject.gameplay.figures;
 
-import java.util.List;
+import com.chessproject.gameplay.board.Field;
+
+
 
 /**
  *Abstract class that is to be inherited by any other Figures
  */
 public abstract class Figure {
 
+    public Field[][] chessboard;
     /**Position on X Axis of the Figure*/
     public int pos_x;
     /**Position on Y Axis of the Figure*/

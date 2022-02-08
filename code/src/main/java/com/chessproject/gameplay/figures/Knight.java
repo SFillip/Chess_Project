@@ -1,6 +1,12 @@
 package com.chessproject.gameplay.figures;
 
+import com.chessproject.gameplay.board.Field;
+
 public class Knight extends Figure{
+
+    public Knight(Field[][] chessboard) {
+        this.chessboard = chessboard;
+    }
     @Override
     public boolean[][] determinMoveables() {
         boolean[][] moveAbles = new boolean[8][8];
