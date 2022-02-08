@@ -143,6 +143,16 @@ public class ChessboardController {
     private Label BC;
     @FXML
     private Label GE;
+    @FXML
+    private Label DE;
+    @FXML
+    private Label EE;
+    @FXML
+    private Label BE;
+    @FXML
+    private Label CE;
+    @FXML
+    private Label EG;
 
     @Deprecated
     public void initialize() {
