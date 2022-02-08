@@ -23,6 +23,7 @@ import java.util.Scanner;
 public class LobbyContainer {
 
     public static String remoteName;
+    private static Stage st;
 
     @FXML
     private Button backToMenu;
@@ -36,24 +37,29 @@ public class LobbyContainer {
     private Label playerNameInLobby;
 
     private Alert clientJoinedAlert;
-    private boolean clientConnected;
 
     @FXML
-    public void close(ActionEvent actionEvent) {
+    public void close(ActionEvent actionEvent)throws IOException {
         Stage stage = (Stage) backToMenu.getScene().getWindow();
-        Parent root = null;
-
-        try {
-            root = new FXMLLoader(getClass().getResource("menu_view.fxml")).load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Parent root =new FXMLLoader(getClass().getResource("menu_view.fxml")).load();
 
         stage.getScene().setRoot(root);
     }
 
     @FXML
     public void startGame(ActionEvent actionEvent) {
+        NetworkConversationManager.write("swapToChessboard");
+
+        Stage stage = (Stage) hostGame.getScene().getWindow();
+        Parent root = null;
+
+        try {
+            root = new FXMLLoader(getClass().getResource("Chessboard_view.fxml")).load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        stage.getScene().setRoot(root);
     }
 
     @FXML
@@ -80,7 +86,9 @@ public class LobbyContainer {
                 name=s.nextLine();
                 ip=s.nextLine();
 
-                GamePlayManager.localPlayer=new Player(name,1);
+                GamePlayManager.localPlayer=new Player();
+                GamePlayManager.localPlayer.setPlayerName(name);
+                GamePlayManager.localPlayer.setPlayerNumber(1);
 
                 Thread f=new Thread(new ClientManager(("ip")));
                 Thread f2=new Thread(()->Platform.runLater(this::onConnectedToHost));
@@ -96,7 +104,6 @@ public class LobbyContainer {
 
     public void onClientConnected(){
         clientJoinedAlert.showAndWait();
-        clientConnected=true;
 
         NetworkConversationManager.write("request::name");
 
@@ -108,11 +115,18 @@ public class LobbyContainer {
         hostGame.setDisable(false);
     }
     public void onConnectedToHost(){
+        LobbyContainer.st=(Stage) hostGame.getScene().getWindow();
         NetworkConversationManager.write("request::name");
         while(LobbyContainer.remoteName==null){
 
         }
 
         enemyNameInLobby.setText(LobbyContainer.remoteName);
+    }
+
+    public static void switchSceneToChessboardOnClient() throws IOException {
+        Parent root =new FXMLLoader(LobbyContainer.class.getResource("Chessboard_view.fxml")).load();
+
+        st.getScene().setRoot(root);
     }
 }

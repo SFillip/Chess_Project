@@ -4,6 +4,8 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
@@ -12,36 +14,18 @@ public class ChessboardController {
     @FXML
     private GridPane gridPane;
 
-    @FXML
+    private boolean figureSelected;
+
+    @Deprecated
     public void initialize(){
         for(Node child : gridPane.getChildren()){
-
-            //Switches on Power when hovered over
-            child.setOnMouseEntered(new EventHandler<MouseEvent>(){
-                @Override
-                public void handle(MouseEvent mouseEvent) {
-                    Pane p=(Pane) mouseEvent.getSource();
-                    p.setStyle("-fx-border: yellow");
-                }
-            });
-
-            //Switches off border when hover exited
-            child.setOnMouseExited(new EventHandler<MouseEvent>(){
-
-                @Override
-                public void handle(MouseEvent mouseEvent) {
-                    Pane p=(Pane) mouseEvent.getSource();
-                    p.setStyle("-fx-border: transparent");
-                }
-            });
-
-            child.setOnMouseClicked(new EventHandler<MouseEvent>(){
-                final int x=GridPane.getColumnIndex(child);
-                final int y=GridPane.getRowIndex(child);
-
-                @Override
-                public void handle(MouseEvent mouseEvent) {
-
+            child.setOnMousePressed(mouseEvent -> {
+                if(!figureSelected){
+                    System.out.println("a");
+                    figureSelected=true;
+                }else {
+                    System.out.println("b");
+                    figureSelected=false;
                 }
             });
         }
