@@ -34,8 +34,6 @@ public class ChessboardController {
     @FXML
     private Label DH;
     @FXML
-    private Pane A7;
-    @FXML
     private Label EA;
     @FXML
     private Label EB;
@@ -184,23 +182,7 @@ public class ChessboardController {
                     System.out.println("b");
                     figureSelected=false;
 
-                    int newX;
-                    try {
-                        newX= GridPane.getColumnIndex(child);
-                    }catch(NullPointerException e){
-                        newX=0;
-                    }
-
-                    int newY;
-                    try {
-                        newY= GridPane.getRowIndex(child);
-                    }catch(NullPointerException e){
-                        newY=0;
-                    }
-
-                    if(moveAbles[newX][newY]=true){
-                        GamePlayManager.changePlayer();
-                    }
+                    GamePlayManager.changePlayer();
                 }
             });
         }
