@@ -62,226 +62,226 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="AG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="AG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="2" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="CG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="1" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="BG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="BG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="3" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="DG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="4" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="EG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="EG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="5" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="FG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="6" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="GG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="7" GridPane.rowIndex="1">
       <children>
-         <Label fx:id="HG" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="HG" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="AF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="AF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="1" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="BF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="BF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="2" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="CF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="3" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="DF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="4" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="EF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="EF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="5" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="FF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="6" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="GF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="7" GridPane.rowIndex="2">
       <children>
-         <Label fx:id="HF" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="HF" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="AE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="AE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="1" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="BE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="BE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="2" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="CE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="3" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="DE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="4" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="EE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="EE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="5" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="FE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="6" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="GE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="7" GridPane.rowIndex="3">
       <children>
-         <Label fx:id="HE" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="HE" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="6" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="GD" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GD" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="7" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="HD" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="HD" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="5" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="FD" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FD" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="4" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="ED" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="ED" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="3" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="DD" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DD" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="2" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="CD" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CD" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="1" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="BD" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="BD" alignment="CENTER" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.rowIndex="4">
       <children>
-         <Label fx:id="AD" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="AD" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="AC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="AC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="1" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="BC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="BC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="2" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="CC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="3" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="DC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="4" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="EC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="EC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="5" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="FC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="6" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="GC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="7" GridPane.rowIndex="5">
       <children>
-         <Label fx:id="HC" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="HC" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="AB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="1" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="BB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="BB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="2" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="CB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="4" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="EB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="EB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="5" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="FB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="6" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="GB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="7" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="HB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="HB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="7" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="HA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="HA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="6" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="GA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="GA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="5" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="FA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="FA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="4" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="EA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="EA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="3" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="DA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="2" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="CA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="CA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane fx:id="A7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="1" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="BA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="BA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.rowIndex="7">
       <children>
-         <Label fx:id="AA" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="AA" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="3" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="DB" layoutX="24.0" layoutY="17.0" text="Label" />
+         <Label fx:id="DB" layoutX="24.0" layoutY="17.0" />
       </children></Pane>
 </GridPane>
