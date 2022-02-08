@@ -23,6 +23,7 @@ import java.util.Scanner;
 public class LobbyContainer {
 
     public static String remoteName;
+    private static Stage st;
 
     @FXML
     private Button backToMenu;
@@ -112,11 +113,18 @@ public class LobbyContainer {
         hostGame.setDisable(false);
     }
     public void onConnectedToHost(){
+        LobbyContainer.st=(Stage) hostGame.getScene().getWindow();
         NetworkConversationManager.write("request::name");
         while(LobbyContainer.remoteName==null){
 
         }
 
         enemyNameInLobby.setText(LobbyContainer.remoteName);
+    }
+
+    public static void switchSceneToChessboardOnClient() throws IOException {
+        Parent root =new FXMLLoader(LobbyContainer.class.getResource("Chessboard_view.fxml")).load();
+
+        st.getScene().setRoot(root);
     }
 }
