@@ -54,8 +54,8 @@ public class NetworkConversationManager {
     private void processInput(String input) {
 
         if (input.startsWith("gameplay::")) {
-            if (input.substring(11).equals("playerChange::")) {
-                GamePlayManager.playerInControl = Integer.parseInt(input.substring(27));
+            if (input.substring(10,24).equals("playerChange::")) {
+                GamePlayManager.playerInControl = Integer.parseInt(input.substring(24));
             }
         } else if (input.startsWith("request::")) {
             if (input.substring(9, 13).equals("name")) {
