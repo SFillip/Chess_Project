@@ -299,7 +299,7 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="1" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB11" layoutX="18.0" layoutY="-3.0" text="♙">
+         <Label fx:id="BB" layoutX="18.0" layoutY="-3.0" text="♙">
             <font>
                <Font size="39.0" />
             </font>
@@ -307,7 +307,7 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="2" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB1" layoutX="18.0" layoutY="-3.0" text="♙">
+         <Label fx:id="CB" layoutX="18.0" layoutY="-3.0" text="♙">
             <font>
                <Font size="39.0" />
             </font>
@@ -315,7 +315,7 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="4" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB111" layoutX="18.0" layoutY="-3.0" text="♙">
+         <Label fx:id="EB" layoutX="18.0" layoutY="-3.0" text="♙">
             <font>
                <Font size="39.0" />
             </font>
@@ -323,7 +323,7 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="5" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB111211" layoutX="18.0" layoutY="-3.0" text="♙">
+         <Label fx:id="FB" layoutX="18.0" layoutY="-3.0" text="♙">
             <font>
                <Font size="39.0" />
             </font>
@@ -331,7 +331,7 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ebecd0;" GridPane.columnIndex="6" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB11121" layoutX="18.0" layoutY="-3.0" text="♙">
+         <Label fx:id="GB" layoutX="18.0" layoutY="-3.0" text="♙">
             <font>
                <Font size="39.0" />
             </font>
@@ -339,7 +339,7 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="7" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB1112" layoutX="18.0" layoutY="-3.0" text="♙">
+         <Label fx:id="HB" layoutX="18.0" layoutY="-3.0" text="♙">
             <font>
                <Font size="39.0" />
             </font>
@@ -403,7 +403,7 @@
       </children></Pane>
     <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #779556;" GridPane.columnIndex="3" GridPane.rowIndex="6">
       <children>
-         <Label fx:id="AB1111" layoutX="18.0" layoutY="-3.0" text="♙">
+         <Label fx:id="DB" layoutX="18.0" layoutY="-3.0" text="♙">
             <font>
                <Font size="39.0" />
             </font>
