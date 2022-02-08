@@ -59,6 +59,7 @@ public class LobbyContainer {
             e.printStackTrace();
         }
 
+        new GamePlayManager().gameLoop();
         stage.getScene().setRoot(root);
     }
 
@@ -127,6 +128,7 @@ public class LobbyContainer {
     public static void switchSceneToChessboardOnClient() throws IOException {
         Parent root =new FXMLLoader(LobbyContainer.class.getResource("Chessboard_view.fxml")).load();
 
+        new GamePlayManager().gameLoop();
         st.getScene().setRoot(root);
     }
 }

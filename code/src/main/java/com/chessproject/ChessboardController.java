@@ -1,5 +1,6 @@
 package com.chessproject;
 
+import com.chessproject.gameplay.GamePlayManager;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -20,12 +21,14 @@ public class ChessboardController {
     public void initialize(){
         for(Node child : gridPane.getChildren()){
             child.setOnMousePressed(mouseEvent -> {
-                if(!figureSelected){
+                if(!figureSelected && GamePlayManager.playerInControl == GamePlayManager.localPlayer.getPlayerNumber()){
                     System.out.println("a");
                     figureSelected=true;
-                }else {
+                }else if(figureSelected && GamePlayManager.playerInControl == GamePlayManager.localPlayer.getPlayerNumber()) {
                     System.out.println("b");
                     figureSelected=false;
+
+                    GamePlayManager.changePlayer();
                 }
             });
         }
