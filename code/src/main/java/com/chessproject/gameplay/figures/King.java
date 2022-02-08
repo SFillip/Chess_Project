@@ -5,11 +5,12 @@ import com.chessproject.gameplay.board.Field;
 public class King extends Figure{
 
 
-    public King(Field[][] chessboard) {
-        this.chessboard = chessboard;
+    public King(int pos_x, int pos_y, int playerInControl) {
+        super(pos_x, pos_y, playerInControl);
     }
+
     @Override
-    public boolean[][] determinMoveables() {
+    public boolean[][] determinMoveables(Field[][] chessboard) {
 
         boolean[][] moveAbles = new boolean[8][8];
         try {

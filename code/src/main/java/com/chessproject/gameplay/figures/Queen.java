@@ -4,11 +4,13 @@ import com.chessproject.gameplay.board.Field;
 
 public class Queen extends Figure {
 
-    public Queen(Field[][] chessboard) {
-        this.chessboard = chessboard;
+
+    public Queen(int pos_x, int pos_y, int playerInControl) {
+        super(pos_x, pos_y, playerInControl);
     }
+
     @Override
-    public boolean[][] determinMoveables() {
+    public boolean[][] determinMoveables(Field[][] chessboard) {
         boolean[][] moveAbles = new boolean[8][8];
         try {
             for (int i = 0; true; i++) {

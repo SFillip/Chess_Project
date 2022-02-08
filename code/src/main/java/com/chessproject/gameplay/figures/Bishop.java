@@ -4,12 +4,12 @@ import com.chessproject.gameplay.board.Field;
 
 public class Bishop extends Figure{
 
-    public Bishop(Field[][] chessboard) {
-        this.chessboard = chessboard;
+    public Bishop(int pos_x, int pos_y, int playerInControl) {
+        super(pos_x, pos_y, playerInControl);
     }
 
     @Override
-    public boolean[][] determinMoveables() {
+    public boolean[][] determinMoveables(Field[][] chessboard) {
         boolean[][] moveAbles = new boolean[8][8];
         try {
             for (int i = 0; true; i++) {
